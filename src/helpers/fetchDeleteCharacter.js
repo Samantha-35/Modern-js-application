@@ -1,6 +1,6 @@
 const base_url = 'https://character-database.becode.xyz/characters/';
 
-export const deleteCharacter = async (characterId) => {
+export const fetchDeleteCharacter = async (characterId) => {
 	try {
 		await fetch(`${base_url}${characterId}`, {
 			method: 'DELETE',

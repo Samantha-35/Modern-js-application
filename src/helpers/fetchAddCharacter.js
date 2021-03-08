@@ -1,3 +1,5 @@
+const base_url = 'https://character-database.becode.xyz/characters';
+
 //Function that makes the fetch request
 export const fetchAddCharacter = async (character) => {
 	try {

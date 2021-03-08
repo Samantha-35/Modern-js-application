@@ -1,6 +1,4 @@
-import { fetchAddCharacter } from './fetchAddCharacter';
-
-const base_url = 'https://character-database.becode.xyz/characters';
+import { fetchAddCharacter } from '../helpers/fetchAddCharacter';
 
 const inputName = document.getElementById('name');
 const inputShortDescription = document.getElementById('short-description');
