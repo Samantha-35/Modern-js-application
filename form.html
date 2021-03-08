@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/images/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="/src/images/superhero.svg" alt="" class="logo">
+            <div class="header-right">
+                <a class="active" href="#home">Characters</a>
+                <a href="#contact">Sign up</a>
+                <a href="#about">Login</a>
+            </div>
+    </header>
+    <main>
+        <div class="container-grid">
+            <div class="grid-container">
+                <div class="gridTwoCol">
+                    <div>
+                        <p>Name</p>
+                    </div>
+                    <div><input type="text" placeholder="type your text here" id="name" class="boxes"></input></div>
+                </div>
+                <div class="gridTwoCol">
+                    <div>
+                        <p>Short description</p>
+                    </div>
+                    <div><input type="text" placeholder="type your text here" id="short-description"
+                            class="boxes"></input></div>
+                </div>
+                <div class="gridTwoCol">
+                    <div>
+                        <p>Long description</p>
+                    </div>
+                    <div><input type="text" placeholder="type your text here" class="textareaP" id="long-description"
+                            class="boxes"></input></div>
+                </div>
+                <div class="gridTwoCol">
+                    <div>
+                        <p>Add an image</p>
+                    </div>
+                    <div><input type="file" class="inpuTypeFile" id="image-input" class="boxes"></input></div>
+                </div>
+                <button class="button">Save</button>
+            </div>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+    <script src="./script.js/addCharacter.js" type="module"></script>
+
+
+</body>
+
+</html>
