@@ -32,7 +32,7 @@
                         </div>
                         <div class="buttons">
                             <!-- <button class="btn" class="buttonOne">Delete</button> -->
-                            <button   onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
                                 class="btn buttonOne">Edit</button>
                         </div>
                     </div>
@@ -53,31 +53,34 @@
 
                 <div class="container">
                     <label for="uname"><b>Name</b></label>
-                    <input type="text" id='name-modal' class="borderInput" placeholder="Enter a name" name="uname" required>
+                    <input type="text" id='name-modal' class="borderInput" placeholder="Enter a name" name="uname"
+                        required>
 
                     <label for="psw"><b>Short description</b></label>
-                    <input type="text" id='short-description-modal' placeholder="Enter a short description" name="psw" required>
+                    <input type="text" id='short-description-modal' placeholder="Enter a short description" name="psw"
+                        required>
 
                     <label for="psw"><b>Long description</b></label>
-                    <textarea type="text" id='long-description-modal' placeholder="Enter a longer description" name="psw" required></textarea>
+                    <textarea type="text" id='long-description-modal' placeholder="Enter a longer description"
+                        name="psw" required></textarea>
 
                     <!-- <button type="submit">btn</button> -->
                     <!-- <div><input type="file" class="inpuTypeFileModal" id="image-input"></input></div> -->
-                    <div><input id='input-file' type="file" class="ChooseImage"></div>
+                    <!-- <div><input id='input-file' type="file" class="ChooseImage"></div> -->
                     <!-- <label>
                         <input type="checkbox" checked="checked" name="remember" class="checkbox">
                     </label> -->
-                    <div class="btn_checkbox">
+                    <!-- <div class="btn_checkbox">
                         <input type="checkbox" id="scales" class="checkbox" name="scales" checked>
                         <a href="#" class="btnRemember">Remember me</a>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" id="delete-button" onclick="document.getElementById('id01').style.display='none'"
-                        class="cancelbtn">Delete</button>
-                    <button id="button-modal" type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="cancelbtn">Save</button>
+                    <button type="button" id="delete-button"
+                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button id="button-modal" type="button"
+                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Save</button>
                 </div>
             </form>
         </div>
