@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.e308ff8e.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
     <title>Character manager</title>
-</head>
+<script src="/style.e308ff8e.js"></script></head>
 
 <body>
     <header>
         <div class="header">
-            <img src="/src/images/superhero.svg" alt="" class="logo">
+            <img src="/superhero.d7dd2229.svg" alt="logo" class="logo">
             <div class="header-right">
                 <a class="active" href="#home">Characters</a>
                 <a href="#contact">Sign up</a>
                 <a href="#about">Login</a>
             </div>
-    </header>
+    </div></header>
     <main>
         <template>
             <div class="card">
@@ -32,37 +32,32 @@
                         </div>
                         <div class="buttons">
                             <!-- <button class="btn" class="buttonOne">Delete</button> -->
-                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-                                class="btn buttonOne">Edit</button>
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn buttonOne">Edit</button>
                         </div>
                     </div>
                 </div>
 
             </div>
         </template>
-        <div class="container" id='target'></div>
+        <div class="container" id="target"></div>
 
         <div id="id01" class="modal">
 
             <form class="modal-content animate" action="/action_page.php" method="post">
                 <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                    <img src="/src/images/superhero.svg" alt="Avatar" class="avatar">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="/superhero.d7dd2229.svg" alt="Avatar" class="avatar">
                 </div>
 
                 <div class="container">
                     <label for="uname"><b>Name</b></label>
-                    <input type="text" id='name-modal' class="borderInput" placeholder="Enter a name" name="uname"
-                        required>
+                    <input type="text" id="name-modal" class="borderInput" placeholder="Enter a name" name="uname" required="">
 
                     <label for="psw"><b>Short description</b></label>
-                    <input type="text" id='short-description-modal' placeholder="Enter a short description" name="psw"
-                        required>
+                    <input type="text" id="short-description-modal" placeholder="Enter a short description" name="psw" required="">
 
                     <label for="psw"><b class="longDescription">Long description</b></label>
-                    <textarea type="text" id='long-description-modal' placeholder="Enter a longer description"
-                        name="psw" required></textarea>
+                    <textarea type="text" id="long-description-modal" placeholder="Enter a longer description" name="psw" required=""></textarea>
 
                     <!-- <button type="submit">btn</button> -->
                     <!-- <div><input type="file" class="inpuTypeFileModal" id="image-input"></input></div> -->
@@ -77,10 +72,8 @@
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" id="delete-button"
-                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button id="button-modal" type="button"
-                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Save</button>
+                    <button type="button" id="delete-button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button id="button-modal" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Save</button>
                 </div>
             </form>
         </div>
@@ -91,7 +84,7 @@
 
     <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
     <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
-    <script src="./script.js/index.js" type="module"></script>
+    <script src="/script.js.5f9b3280.js" type="module"></script>
     <!-- <script src="./script.js/getCharacters.js" type="module"></script> -->
     <!-- <script src="./script.js/updateCharacter.js" type="module"></script> -->
 </body>
