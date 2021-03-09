@@ -19,22 +19,19 @@ const init = async () => {
 
 			//button to open the modal
 			button.addEventListener('click', () => {
-				const inputsModal = setModalValues(
-					hero.name,
-					hero.shortDescription,
-					hero.description
-				);
+				const { name, shortDescription, description } = hero;
+				const deleteButton = document.getElementById('delete-button');
+				const modalSaveButton = document.getElementById('button-modal');
 
-				const modalButton = document.getElementById('button-modal');
+				//prettier-ignore
+				const inputsModal = setModalValues(name,shortDescription,description);
 
 				//Listener inside the modal for save button
-				modalButton.addEventListener('click', () => {
+				modalSaveButton.addEventListener('click', () => {
 					const updatedCharacter = setUpdatedCharacter(hero, inputsModal);
 
 					fetchUpdateCharacter(updatedCharacter, heroId);
 				});
-
-				const deleteButton = document.getElementById('delete-button');
 
 				deleteButton.addEventListener('click', () => {
 					fetchDeleteCharacter(heroId);
