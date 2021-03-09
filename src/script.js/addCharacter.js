@@ -1,4 +1,4 @@
-import { fetchAddCharacter } from '../helpers/fetchAddCharacter';
+import { fetchAddCharacter } from '../helpers/fetchAddCharacter.js';
 
 const inputName = document.getElementById('name');
 const inputShortDescription = document.getElementById('short-description');

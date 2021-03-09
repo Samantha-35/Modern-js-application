@@ -1,6 +1,7 @@
 import { fetchDeleteCharacter } from '../helpers/fetchDeleteCharacter.js';
 import { fetchGetCharacters } from '../helpers/fetchGetCharacters.js';
 import { fetchUpdateCharacter } from '../helpers/fetchUpdateCharacter.js';
+import { setUpdatedCharacter } from '../helpers/setUpdatedCharacter.js';
 import { setModalValues } from './setModalValues.js';
 
 const target = document.getElementById('target');
@@ -32,22 +33,17 @@ const init = async () => {
 
 			//button to open the modal
 			button.addEventListener('click', () => {
-				setModalValues(hero.name, hero.shortDescription, hero.description);
+				const inputsModal = setModalValues(
+					hero.name,
+					hero.shortDescription,
+					hero.description
+				);
 
 				const modalButton = document.getElementById('button-modal');
 
 				//Listener inside the modal for save button
 				modalButton.addEventListener('click', () => {
-					const name = inputNameModal.value;
-					const shortDescription = inputShortDescriptionModal.value;
-					const description = inputLongDescriptionModal.value;
-
-					const updatedCharacter = {
-						...hero,
-						name,
-						shortDescription,
-						description,
-					};
+					const updatedCharacter = setUpdatedCharacter(hero, inputsModal);
 
 					fetchUpdateCharacter(updatedCharacter, heroId);
 				});

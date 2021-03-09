@@ -12,4 +12,10 @@ export const setModalValues = (name, shortDescription, description) => {
 		'long-description-modal'
 	);
 	inputLongDescriptionModal.value = description;
+
+	return {
+		inputNameModal,
+		inputShortDescriptionModal,
+		inputLongDescriptionModal,
+	};
 };
