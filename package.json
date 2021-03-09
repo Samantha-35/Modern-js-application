@@ -1,0 +1,24 @@
+{
+  "name": "Modern-js-application",
+  "version": "1.0.0",
+  "description": "Organize your code JS efficiently",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samantha-35/Modern-js-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samantha-35/Modern-js-application/issues"
+  },
+  "homepage": "https://github.com/Samantha-35/Modern-js-application#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
