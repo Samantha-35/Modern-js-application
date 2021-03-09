@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,6 @@
   "homepage": "https://github.com/Samantha-35/Modern-js-application#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
-  }
+  },
+  "dependencies": {}
 }
