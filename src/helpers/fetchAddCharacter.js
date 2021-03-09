@@ -14,7 +14,7 @@ export const fetchAddCharacter = async (character) => {
 	} catch (error) {
 		Swal.fire(
 			'Oh no!!',
-			'Something when wrong, please try again later',
+			'Something went wrong, please try again later',
 			'error'
 		);
 
