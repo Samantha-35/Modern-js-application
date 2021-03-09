@@ -1,13 +1,14 @@
-import { deleteCharacter } from './deleteCharacter.js';
-import { getCharacters } from './getCharacters.js';
-import { updateCharacter } from './updateCharacter.js';
+import { fetchDeleteCharacter } from '../helpers/fetchDeleteCharacter.js';
+import { fetchGetCharacters } from '../helpers/fetchGetCharacters.js';
+import { fetchUpdateCharacter } from '../helpers/fetchUpdateCharacter.js';
+import { setModalValues } from './setModalValues.js';
 
 const target = document.getElementById('target');
 const template = document.querySelector('template');
 
 const init = async () => {
 	try {
-		const characters = await getCharacters();
+		const characters = await fetchGetCharacters();
 
 		characters.forEach((hero, i) => {
 			const clone = template.cloneNode(true).content;
@@ -29,23 +30,9 @@ const init = async () => {
 
 			const heroId = hero.id;
 
-			// const heroImage = hero.img;
-
 			//button to open the modal
 			button.addEventListener('click', () => {
-				let inputNameModal = document.getElementById('name-modal');
-				inputNameModal.value = hero.name;
-
-				let inputShortDescriptionModal = document.getElementById(
-					'short-description-modal'
-				);
-
-				inputShortDescriptionModal.value = hero.shortDescription;
-
-				let inputLongDescriptionModal = document.getElementById(
-					'long-description-modal'
-				);
-				inputLongDescriptionModal.value = hero.description;
+				setModalValues(hero.name, hero.shortDescription, hero.description);
 
 				const modalButton = document.getElementById('button-modal');
 
@@ -62,13 +49,13 @@ const init = async () => {
 						description,
 					};
 
-					updateCharacter(updatedCharacter, heroId);
+					fetchUpdateCharacter(updatedCharacter, heroId);
 				});
 
 				const deleteButton = document.getElementById('delete-button');
 
 				deleteButton.addEventListener('click', () => {
-					deleteCharacter(heroId);
+					fetchDeleteCharacter(heroId);
 				});
 			});
 

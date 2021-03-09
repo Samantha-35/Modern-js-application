@@ -1,4 +1,4 @@
-const base_url = 'https://character-database.becode.xyz/characters';
+import { fetchAddCharacter } from '../helpers/fetchAddCharacter';
 
 const inputName = document.getElementById('name');
 const inputShortDescription = document.getElementById('short-description');
@@ -30,27 +30,5 @@ button.addEventListener('click', () => {
 		image,
 	};
 
-	addCharacter(character);
+	fetchAddCharacter(character);
 });
-
-//Function that makes the fetch request
-const addCharacter = async (character) => {
-	try {
-		await fetch(base_url, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(character),
-		});
-		Swal.fire('Nice!', 'Character added', 'success');
-	} catch (error) {
-		Swal.fire(
-			'Oh no!!',
-			'Something when wrong, please try again later',
-			'error'
-		);
-
-		console.log(error);
-	}
-};
