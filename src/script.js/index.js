@@ -1,4 +1,4 @@
-import 'regenerator-runtime/runtime';
+// import 'regenerator-runtime/runtime';
 import { fetchDeleteCharacter } from '../helpers/fetchDeleteCharacter.js';
 import { fetchGetCharacters } from '../helpers/fetchGetCharacters.js';
 import { fetchUpdateCharacter } from '../helpers/fetchUpdateCharacter.js';

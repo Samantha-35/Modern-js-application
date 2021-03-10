@@ -1,0 +1,1 @@
+const newvolume = 0;
