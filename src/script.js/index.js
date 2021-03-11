@@ -1,4 +1,4 @@
-// import 'regenerator-runtime/runtime';
+import 'regenerator-runtime/runtime';
 import { fetchDeleteCharacter } from '../helpers/fetchDeleteCharacter.js';
 import { fetchGetCharacters } from '../helpers/fetchGetCharacters.js';
 import { fetchUpdateCharacter } from '../helpers/fetchUpdateCharacter.js';
@@ -27,13 +27,14 @@ const init = async () => {
 				//prettier-ignore
 				const inputsModal = setModalValues(name,shortDescription,description);
 
-				//Listener inside the modal for save button
+				//Update character
 				modalSaveButton.addEventListener('click', () => {
 					const updatedCharacter = setUpdatedCharacter(hero, inputsModal);
 
 					fetchUpdateCharacter(updatedCharacter, heroId);
 				});
 
+				// Delete character
 				deleteButton.addEventListener('click', () => {
 					fetchDeleteCharacter(heroId);
 				});

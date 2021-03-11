@@ -15,12 +15,11 @@
         <div class="header">
             <img src="./src/images/superhero.svg" alt="logo" class="logo">
             <div class="header-right">
-                <a class="active" href="#home">Characters</a>
-                <a href="#contact">Sign up</a>
-                <a href="#about">Login</a>
+                <a class="active" href="./index.html">Characters</a>
+                <a href="./form.html">Add Character</a>
             </div>
     </header>
-    <main>
+    <main class="main-container">
         <template>
             <div class="card">
                 <div class="batman"><img src="" alt="Batman" class="batmanImg">
@@ -57,11 +56,11 @@
                         required>
 
                     <label for="psw"><b>Short description</b></label>
-                    <input type="text" id='short-description-modal' placeholder="Enter a short description" name="psw"
+                    <input type="text" id='short-description-modal' class="boxes" placeholder="Enter a short description" name="psw"
                         required>
 
                     <label for="psw"><b class="longDescription">Long description</b></label>
-                    <textarea type="text" id='long-description-modal' placeholder="Enter a longer description"
+                    <textarea type="text" id='long-description-modal boxes' placeholder="Enter a longer description"
                         name="psw" required></textarea>
 
                     <!-- <button type="submit">btn</button> -->
@@ -84,7 +83,7 @@
                 </div>
             </form>
         </div>
-        <a href="./form.html"><button>Add new Character</button></a>
+        <a href="./form.html"><button class="add-button">Add new Character</button></a>
     </main>
 
     <footer></footer>

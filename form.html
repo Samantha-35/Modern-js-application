@@ -14,51 +14,48 @@
         <div class="header">
             <img src="./src/images/superhero.svg" alt="" class="logo">
             <div class="header-right">
-                <a class="active" href="#home">Characters</a>
-                <a href="#contact">Sign up</a>
-                <a href="#about">Login</a>
+                <a class="active" href="./index.html">Characters</a>
             </div>
     </header>
     <main>
         <div class="container-grid">
             <div class="grid-container">
-                <div class="gridTwoCol">
-                    <div>
-                        <p>Name</p>
+                <div>
+                    <div class="gridTwoCol">
+                        <div>
+                            <p>Name</p>
+                        </div>
+                        <div><input type="text" placeholder="type your text here" id="name" class="boxes"></input></div>
                     </div>
-                    <div><input type="text" placeholder="type your text here" id="name" class="boxes"></input></div>
-                </div>
-                <div class="gridTwoCol">
-                    <div>
-                        <p>Short description</p>
+                    <div class="gridTwoCol">
+                        <div>
+                            <p>Short description</p>
+                        </div>
+                        <div><input type="text" placeholder="type your text here" id="short-description"
+                                class="boxes"></input></div>
                     </div>
-                    <div><input type="text" placeholder="type your text here" id="short-description"
-                            class="boxes"></input></div>
-                </div>
-                <div class="gridTwoCol">
-                    <div>
-                        <p>Long description</p>
+                    <div class="gridTwoCol">
+                        <div>
+                            <p>Long description</p>
+                        </div>
+                        <div><input type="text" placeholder="type your text here"  id="long-description"
+                                class="boxes"></input></div>
                     </div>
-                    <div><input type="text" placeholder="type your text here" class="textareaP" id="long-description"
-                            class="boxes"></input></div>
-                </div>
-                <div class="gridTwoCol">
-                    <div>
-                        <p>Add an image</p>
+                    <div class="gridTwoCol">
+                        <div>
+                            <p>Add an image</p>
+                        </div>
+                        <div><input type="file" class="boxes" id="image-input" class="boxes"></input></div>
                     </div>
-                    <div><input type="file" class="inpuTypeFile" id="image-input" class="boxes"></input></div>
                 </div>
                 <button class="button">Save</button>
             </div>
         </div>
     </main>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
     <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
     <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
     <script src="./src/script.js/addCharacter.js"></script>
-
-
 </body>
 
 </html>
