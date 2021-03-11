@@ -7,6 +7,9 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html --public-url='./'"
   },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Samantha-35/Modern-js-application.git"
